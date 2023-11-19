@@ -1,0 +1,1020 @@
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+
+  <!-- alpine.js is used for handling toggle of navbar on mobile screens, switch it with your own front end framework
+    if needed -->
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+  <link rel="stylesheet" crossorigin href="assets/index-pcgOfJv1.css">
+</head>
+
+<body>
+  <div class="py-2  text-gray-900 min-h-screen">
+
+    <header class="px-5 sm:px-10 md:px-10 md:py-5 lg:px-20 flex items-center justify-between">
+      <div>
+        <!-- <img src="https://storage.googleapis.com/devitary-image-host.appspot.com/15846435184459982716-LogoMakr_7POjrN.png" class="w-48"> -->
+        <h2 class="text-3xl font-black">MBG</h2>
+      </div>
+      <div x-data="{ navOpen: false }">
+        <button @click="navOpen = true">
+          <svg class="cursor-pointer text-gray-700 hover:text-gray-900 w-6 md:hidden" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+        <div :class="{'hidden': !navOpen}"
+          class="md:block fixed top-0 inset-x-0 bg-white p-8 m-4 z-30 rounded-lg shadow md:rounded-none md:shadow-none md:p-0 md:m-0 md:relative md:bg-transparent">
+          <button @click="navOpen = false" class="absolute top-0 right-0 mr-5 mt-5 md:hidden">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="feather feather-x">
+              <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+          </button>
+          <div class="flex flex-col items-center justify-center md:block">
+            <a href="#" class="transition-all duration-100 ease-in-out pb-1 border-b-2 text-indigo-500 border-transparent hover:border-indigo-300
+              hover:text-gray-600 md:mr-8 text-lg md:text-sm font-bold tracking-wide my-4 md:my-0">
+              Home
+            </a>
+
+          
+
+
+            <a href="#pricing" class="transition-all duration-100 ease-in-out pb-1 border-b-2 text-indigo-500 border-transparent hover:border-indigo-300
+            hover:text-indigo-600 md:mr-8 text-lg md:text-sm font-bold tracking-wide my-4 md:my-0">
+            Pricing
+          </a>
+
+ 
+
+          <a href="#services" class="transition-all duration-100 ease-in-out pb-1 border-b-2 text-indigo-500 border-transparent hover:border-indigo-300
+          hover:text-indigo-600 md:mr-8 text-lg md:text-sm font-bold tracking-wide my-4 md:my-0">
+          Services
+        </a>
+
+
+
+          <a href="#about" class="transition-all duration-100 ease-in-out pb-1 border-b-2 text-indigo-500 border-transparent hover:border-indigo-300
+          hover:text-indigo-600 md:mr-8 text-lg md:text-sm font-bold tracking-wide my-4 md:my-0">
+          About Us
+        </a>
+
+        <a href="#developer" class="transition-all duration-100 ease-in-out pb-1 border-b-2 text-indigo-500 border-transparent hover:border-indigo-300
+        hover:text-indigo-600 md:mr-8 text-lg md:text-sm font-bold tracking-wide my-4 md:my-0">
+        Our Developers
+      </a>
+
+            <button class="border border-transparent rounded font-semibold tracking-wide text-lg md:text-sm px-5 py-3 md:py-2
+              focus:outline-none focus:shadow-outline bg-indigo-600 text-gray-100 hover:bg-indigo-800
+              hover:text-gray-200 transition-all duration-300 ease-in-out my-4 md:my-0 w-full md:w-auto">
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <div id="hero" class="pt-5 lg:flex items-center xl:mt-1 lg:mt-0 sm:mt-0 mt-6 ">
+        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          aria-hidden="true">
+          <div
+            class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+          </div>
+        </div>
+
+        <div class="px-5 sm:px-10 md:px-10 md:flex lg:block lg:w-1/2 lg:max-w-3xl lg:mr-8 lg:px-20">
+          <div class="md:w-1/2 md:mr-10 lg:w-full lg:mr-0">
+            <h1 class="text-3xl xl:text-3xl font-black md:leading-none xl:leading-tight">
+              Connect With Developer <img class="inline-flex" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFWklEQVR4nO1Zb2wURRS/lA/6DZXd2vqhTbT4CTRgIZr4N/7DRI22NqkaQqQzeyVplVJsuVJ6CqQHRukVE62KYqKEFhQp1FqhYWb7V6FWpShorKVIAW1pKWmDDYQxb/Zmu3e97e3dbnuifcnk9mbfvvm9nTfz3v7G5ZqRGZkR++JlCTflqItlhayRMdknYXJOxuSKjAnjDZErEqbnJKTWgg7owjOueIukqMkyIhtlTE7JmDJLDYlf0gvPgo1pBz57RfONMiKVEqaXBLDU/BaWGLi+s6SDuWv6dNBwfUdJB78GnZS8Fv2eBDYQqZy9jNwwLeDlHJohIfKnAPOAr4tlf9DDEhUNUGZVN6v4doz5D4/pIOEa+jKrfuP/b1ZU9vy2HnZ/eZfuNIQY2J465Fm7ZsGbEqAWlXWytQcusM0to+y2lW287wn/CQ5WNKMDoj219Rfed+vKVuZrGWVrG4ZYetn3hhAjfhjLUeypy8j1EiZ7YICkXJUt3X5KB/TwGz/xge9a16m/+ckcAJ2F6zp5/yNv/qz3vbi9lyW5mwKzQfbAmM6gz9o1S0L0CzkQu6/WDehgyg4O89CBkChpGAoCauYAtNKvh1iSW+XPlh64oPev3j/AUvKadSccmQkRNgAeBjYCeXzLcT4Y/IaCnMyB4GdPBPVDSAknZEwr7IHPoRk8bNxq0JuH5msaYcm52pTDoNE6AM/ImLJbVjQxX/No0D2YCS2cyNVERJ+NeasUu83Sj3snAHjpkz84gHRvZ1iAkRyAtjCwFnJ2nJ5wD9aE2J1i2mIlTLdaTk5T3RCpjA68oiZDghF7dLybhOmlqDK2Vh5oSSrc1BfVDXDDtxd+YxoeVkLIf3iMpRW0c52iL8+HvX+fr0vMwkZr6L0sgdcpmLLCff1hjYr4f2jzMdsOPLjpGNdZHmYdQCuo/UvMwklLBSCvKjFlc1e1T0hModk06/3fbTuQWdXNdZ5++9ew9wFD2iptluYoJD1y+GDiCbc/G9vd63/gBnNrzth2wF1zhuvcs/5HU53H3tJyhoxpUUQHJEQ/A2W0s8/U4LziI9yg56tB2w6sqR/kOvM9R0x10I7TIox2R3YA0y5QBsNmBiG8QOf1QxdtO/Ba48WIG0Jx/XnNAUSOWpmBAVD2NY+YGkzJa2WRdKw6UK6OcJ3Ul1sj6kiI9ltZA2Px3vdls3yA6N//fQckKyGUPwUhlN/iTAhN9yL2Ng5ri3i1c4v42t5G5WgSWbX9RKZUO5zIoiklnnuv27YDGe9aKCUK2qyXElEVc5umoZjb2x9dMWcsp4G3CWe0qE5bVHML2x0rp4vrTcrp8kA5jekG1//mgwbESGLFvSHid0Ur8CHN6T5M+Qd26NQu/1RbB/BhHmsILSj9zvSj/oWPbH7Uj9Mq5CrQKkB1GAeALGyHVgEiTDahVWDzAAaQ0yoKeSYm8LoTiPhhICCbQoFCroiV2BJ7+5KKSYgtRLe4HKEWA7woGDbORFnjOLXoaRi07ACAFNSi9+Bw0Js3UIufO0bypuXXX6eTu26VrwmR5ICgFWvBKrm7IEBoPWogdyHmtbDRwMOYLsfpdUwrIC5hEKDE4U1yej2QKZf4j0d04ElBr7/Sxul1WAuCoeO2IWycpteNAlyl2J0gTwBvk/1hDw8j6INDDLMDjox3xg84srf1sHvLjwYdcMTMg0YrsK2FHjGlGI6Y5ns6mFI9fsSk7Oxj8zxaBZuoqOGOmPzTdsQ04ZAP0w2idtIP8Kxl15PwbFwO+SaIlyXMwXSRjGixhEithOhZGdHL45mUXpbwobMSpnuhJOZV5b/hmHVGZsR17cs/TKbrbjuiZ4gAAAAASUVORK5CYII=">
+            </h1>
+            <p class="mt-4 xl:mt-2">
+              World Class <span class="border-b-2 border-blue-600">Developers</span>, just for you on contract, full-time or part-time, whatever you need.
+            </p>
+          </div>
+
+          <div class="flex-1">
+            <div class="relative mt-4 md:mt-0 lg:mt-4">
+              <div class="pl-4 pr-4 h-full absolute bottom-0 left-0 flex items-center">
+                <svg class="text-gray-700 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </div>
+              <input type="text"
+                class="w-full border bg-gray-100 px-4 py-4 text-sm tracking-wide focus:outline-none focus:shadow-outline rounded pl-12"
+                placeholder="Type (e.g junior, senior)">
+            </div>
+            <div class="relative mt-4">
+              <div class="pl-4 pr-4 h-full absolute bottom-0 left-0 flex items-center">
+                <svg class="text-gray-700 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <input type="text"
+                class="w-full border bg-gray-100 px-4 py-4 text-sm tracking-wide focus:outline-none focus:shadow-outline rounded pl-12"
+                placeholder="Mountain View, California">
+            </div>
+            <div>
+              <button
+                class="transition-all duration-300 mt-5 w-full border border-transparent rounded font-semibold tracking-wide text-sm px-5 py-4 focus:outline-none focus:shadow-outline bg-indigo-500 text-gray-100 hover:bg-indigo-600 hover:text-gray-200">Find
+                Designers</button>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 w-full flex-1 lg:mt-0">
+          <div></div>
+          <img class="" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/search-mockup.png" />
+        </div>
+        <div
+          class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+          aria-hidden="true">
+          <div
+            class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+          </div>
+        </div>
+      </div>
+
+      <div class="p-5 sm:px-10 md:px-20" id="companies">
+        <div class="max-w-screen-xl mx-auto">
+          <!-- <img class="mx-auto" src="https://storage.googleapis.com/devitary-image-host.appspot.com/15846471026680582071-Strip-Payment-Logos.png"> -->
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- component -->
+      <div id="services" class="bg-dark relative    flex items-center  n justify-center overflow-hidden z-50 ">
+
+        <div
+          class="relative mx-auto h-full px-4  pb-20   md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
+          <div class="flex flex-col items-center justify-between lg:flex-row py-16">
+            <div class=" relative ">
+              <div class=" absolute top-0 -left-48 z-0  opacity-50 ">
+                <!-- <img src="https://placehold.co/200x100" class="w-36 z-0  h-full    object-fill fill-y text-y   "> -->
+              </div>
+              <div class="lg:max-w-xl lg:pr-5 relative z-40">
+                <p class="flex text-sm uppercase text-g1 text-white  ">
+
+                  Our Services
+                </p>
+                <h2
+                  class="mb-6 text-white max-w-lg text-5xl font-light leading-snug tracking-tight text-g1 sm:text-5xl sm:leading-snug">
+                  Host Business on
+                  <span
+                    class="my-1 inline-block border-b-8 border-g4  px-4 font-bold text-g4 animate__animated animate__flash">Internet</span>
+                </h2>
+                <p class="text-base text-gray-100">We are providing website development service worldwide Since 2020.
+                </p>
+                <div class="mt-10 flex flex-col items-center md:flex-row">
+                  <a href="/"
+                    class="mb-3 inline-flex h-12 w-full items-center justify-center rounded bg-blue-600 px-6 font-medium tracking-wide text-white shadow-md transition hover:bg-blue-800 focus:outline-none md:mr-4 md:mb-0 md:w-auto">
+                    View More</a>
+                  <a href="/" aria-label=""
+                    class="group inline-flex items-center font-semibold text-white text-g1">Watch how
+                    it works
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                      class="ml-4 h-6 w-6 transition-transform group-hover:translate-x-2" fill="none"
+                      viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="relative lg:ml-32 lg:block lg:w-1/2">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="my-6 mx-auto h-10 w-10 animate-bounce rounded-full bg-white p-2 lg:hidden" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 17l-4 4m0 0l-4-4m4 4V3"></path>
+              </svg>
+              <div class="abg-orange-400 mx-auto w-fit overflow-hidden rounded-[6rem] rounded-br-none rounded-tl-none">
+                <img src="https://cdn.worldvectorlogo.com/logos/google-1-1.svg">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden text-9xl varien absolute top-6 left-1/4 text-g/10 z-40    ">
+          <b> About Us</b>
+        </div>
+        <div class=" absolute -bottom-24 left-10 z-0  opacity-10 ">
+          <svg width="800px" height="800px" viewBox="0 0 24 24"
+            class="w-96 z-0  h-full    object-fill fill-gray-300 text-gray-300" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M12 6C12 5.44772 11.5523 5 11 5C10.4477 5 10 5.44772 10 6V16C10 16.5523 10.4477 17 11 17C11.5523 17 12 16.5523 12 16V6ZM9 9C9 8.44772 8.55228 8 8 8C7.44772 8 7 8.44772 7 9V16C7 16.5523 7.44772 17 8 17C8.55228 17 9 16.5523 9 16V9ZM15 9C15 8.44772 14.5523 8 14 8C13.4477 8 13 8.44772 13 9V16C13 16.5523 13.4477 17 14 17C14.5523 17 15 16.5523 15 16V9ZM18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V16C16 16.5523 16.4477 17 17 17C17.5523 17 18 16.5523 18 16V13ZM6 15C6 14.4477 5.55228 14 5 14C4.44772 14 4 14.4477 4 15V16C4 16.5523 4.44772 17 5 17C5.55228 17 6 16.5523 6 16V15ZM21 15C21 14.4477 20.5523 14 20 14C19.4477 14 19 14.4477 19 15V16C19 16.5523 19.4477 17 20 17C20.5523 17 21 16.5523 21 16V15ZM4 18C3.44772 18 3 18.4477 3 19C3 19.5523 3.44772 20 4 20H21C21.5523 20 22 19.5523 22 19C22 18.4477 21.5523 18 21 18H4Z">
+            </path>
+          </svg>
+        </div>
+
+        <div class=" absolute -bottom-0 left-3/4 z-0  opacity-10 ">
+          <svg width="800px" height="800px" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"
+            class="w-48 z-0  h-full -rotate-90   object-fill fill-red-300 text-red-300">
+            <path
+              d="M32 225h12.993A4.004 4.004 0 0 0 49 220.997V138.01c0-4.976.724-5.04 1.614-.16l12.167 66.708c.397 2.177 2.516 3.942 4.713 3.942h8.512a3.937 3.937 0 0 0 3.947-4S79 127.5 80 129s14.488 52.67 14.488 52.67c.559 2.115 2.8 3.83 5.008 3.83h8.008a3.993 3.993 0 0 0 3.996-3.995v-43.506c0-4.97 1.82-5.412 4.079-.965l10.608 20.895c1.001 1.972 3.604 3.571 5.806 3.571h9.514a3.999 3.999 0 0 0 3.993-4.001v-19.49c0-4.975 2.751-6.074 6.155-2.443l6.111 6.518c1.51 1.61 4.528 2.916 6.734 2.916h7c2.21 0 5.567-.855 7.52-1.92l9.46-5.16c1.944-1.06 5.309-1.92 7.524-1.92h23.992a4.002 4.002 0 0 0 4.004-3.992v-7.516a3.996 3.996 0 0 0-4.004-3.992h-23.992c-2.211 0-5.601.823-7.564 1.834l-4.932 2.54c-4.423 2.279-12.028 3.858-16.993 3.527l2.97.198c-4.962-.33-10.942-4.12-13.356-8.467l-11.19-20.14c-1.07-1.929-3.733-3.492-5.939-3.492h-7c-2.21 0-4 1.794-4 4.001v19.49c0 4.975-1.14 5.138-2.542.382l-12.827-43.535c-.625-2.12-2.92-3.838-5.127-3.838h-8.008c-2.207 0-3.916 1.784-3.817 4.005l1.92 42.998c.221 4.969-.489 5.068-1.585.224l-15.13-66.825c-.488-2.155-2.681-3.902-4.878-3.902h-8.512a3.937 3.937 0 0 0-3.947 4s.953 77-.047 75.5-13.937-92.072-13.937-92.072C49.252 34.758 47.21 33 45 33H31.999"
+              fill-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class=" absolute top-10 left-3/4 z-0  opacity-10 ">
+
+          <svg fill="#000000" width="800px" height="800px" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"
+            class="w-96 z-0  h-full    object-fill fill-blue-300 text-blue-300">
+            <path
+              d="M230.704 99.2a4.004 4.004 0 0 0-4.01-3.995h-50.981c-2.215 0-5.212-1.327-6.693-2.964L155.289 77.08c-17.795-19.65-41.628-16.256-53.234 7.58l-38.736 79.557C60.42 170.172 52.705 175 46.077 175H29.359a3.996 3.996 0 0 0-3.994 3.995v10.01A4 4 0 0 0 29.372 193h24.7c8.835 0 19.208-6.395 23.174-14.293l43.645-86.914c3.964-7.894 12.233-9.228 18.473-2.974l17.184 17.219c3.123 3.13 9.242 5.667 13.647 5.667H226.7a4.005 4.005 0 0 0 4.004-3.994v-8.512z"
+              fill-rule="evenodd"></path>
+          </svg>
+        </div>
+
+      </div>
+
+
+      <section
+        class="sm:flex sm:justify-between  lg:container lg:mx-auto md:p-9 lg:p-9 p-9 mt-10  sm:mr-7 sm:p-2 sm:w-full">
+
+        <div class="w-full sm:w-full md:w-96 ml-5">
+
+          <h1 class="text-3xl font-black"> Technology We Use </h1>
+          <p class="mt-3">We use all the latest Technology to make your website run fast, we will also create your
+            Google Business to grow your Business fast. </p>
+
+
+          <div class="mt-4">
+            <div class="flex gap-5 items-center justify-between">
+              <div class="items-start">
+                <button class="p-3 rounded-md text-white bg-blue-600">Grow With --></button>
+              </div>
+
+
+
+
+              <div class="right-0">
+
+                <img src="https://cdn.worldvectorlogo.com/logos/google-my-business-logo.svg" class="w-24">
+
+              </div>
+            </div>
+          </div>
+          <br><br>
+
+          <hr>
+        </div>
+
+        <div class="flex flex-wrap gap-9 sm:mt-0 mt-6 sm:w-[100%] md:w-[50%] xl:w-[50%] justify-center items-center">
+          <span class=" p-1 rounded-md">
+            <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" class="w-[100px]" alt="React">
+          </span>
+
+          <span class=" p-1 rounded-md">
+            <img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" class="w-[100px]" alt="nodejs">
+          </span>
+
+          <span class=" p-1 rounded-md">
+            <img src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg" alt="javascript" class="w-[100px]">
+          </span>
+
+          <span class="b p-1 rounded-md">
+
+            <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="html" class="w-[100px]">
+          </span>
+          <span class=" p-1 rounded-md">
+            <img src="https://cdn.worldvectorlogo.com/logos/mysql-6.svg" alt="mysql" class="w-[100px]">
+          </span>
+          <span class=" p-1 rounded-md h-[100px]">
+            <img src="https://cdn.worldvectorlogo.com/logos/php-1.svg" alt="php" class="w-[100px] mt-6">
+          </span>
+
+          <span class=" p-1 rounded-md h-[100px]">
+            <img src="https://cdn.worldvectorlogo.com/logos/tailwindcss.svg" alt="tailwind" class="w-[100px] mt-6">
+          </span>
+
+          <span class=" p-1 rounded-md h-[100px]">
+            <img src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" alt="aws" class="w-[100px] mt-6">
+
+          </span>
+
+          <span class=" p-1 rounded-md h-[100px]">
+            <img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="python" class="w-[100px] mt-0">
+
+          </span>
+
+
+          <span class=" p-1 rounded-md h-[100px]">
+            <img src="
+          https://cdn.worldvectorlogo.com/logos/git-icon.svg" alt="python" class="w-[100px] mt-0">
+
+          </span>
+
+          <button class="w-full bg-blue-600 p-3 text-white font-black rounded-md">Many More &nbsp;-->
+
+
+
+          </button>
+
+        </div>
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="px-5 sm:px-10 md:px-20 lg:px-10 xl:px-20 py-12 main-bg" id="cards">
+
+        <div id="developer" class="max-w-screen-xl mx-auto">
+          <h3 class="leading-none font-black text-white text-3xl">Popular Developer</h3>
+
+
+          <div class="lg:flex justify-between lg:mt-8">
+            <div class="lg:mx-2 flex flex-col items-center">
+              <div class="flex-1 flex w-full max-w-sm pt-16 lg:pt-0">
+                <div class="w-full glass p-8 sm:p-12 lg:px-8 xl:px-12 shadow-lg rounded bg-gray-100 relative">
+                  <div class="text-lg font-bold text-gray-100 leading-tight">Senior Deveoper - Full Stack</div>
+                  <div>
+                    <div class="flex justify-between mt-6 text-xs font-bold">
+                      <div class="flex items-start">
+                        <svg class="text-gray-100 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round">
+                          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                          <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span class="ml-1 text-gray-100">Gurugram(India)</span>
+                      </div>
+
+                      <div class="flex items-start ml-4">
+                        <svg class="text-gray-100 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round">
+                          <rect xmlns="http://www.w3.org/2000/svg" x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                          <path xmlns="http://www.w3.org/2000/svg" d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                        </svg>
+                        <span class="ml-1 text-gray-100">Experience (3 Years)</span>
+                      </div>
+                    </div>
+                    <div
+                      class="text-center flex flex-row justify-between flex-wrap justify-between items-center text-xs font-bold">
+                      <span class="w-5/12 mt-6 mx-1 p-1 rounded bg-green-200 text-green-600">Freelancer</span>
+                      <span class="w-5/12 mt-6 mx-1 p-1 rounded bg-indigo-200 text-indigo-600">Remote</span>
+                      <span class="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-200 text-blue-600">3 Years Exp</span>
+                      <span class="w-5/12 mt-6 mx-1 p-1 rounded bg-purple-200 text-purple-600">$20/Hr</span>
+                    </div>
+                    <div class="mt-12 flex items-center">
+                      <div class="w-16 h-16 bg-cover rounded-full border-2 border-gray-700" alt=""
+                        style='background-image: url(&quot;data:image/jpeg;base64,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&quot;);'>
+                      </div>
+                      <div class="ml-5">
+                        <div class="font-bold text-gray-100">
+                          Nishant Sharma
+                        </div>
+                        <!-- <div class="text-xs text-gray-500">Hired 3 Hours ago</div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:mx-2 flex flex-col items-center">
+              <div class="flex-1 flex w-full max-w-sm pt-16 lg:pt-0">
+                <div class="w-full glass p-8 sm:p-12 lg:px-8 xl:px-12 shadow-lg rounded bg-gray-100 relative">
+                  <div class="text-lg font-bold text-gray-100 leading-tight">Front End Developer</div>
+                  <div>
+                    <div class="flex justify-between mt-6 text-xs font-bold">
+                      <div class="flex items-start">
+                        <svg class="text-gray-100 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round">
+                          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                          <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span class="ml-1 text-gray-100">USA</span>
+                      </div>
+
+                      <div class="flex items-start ml-4">
+                        <svg class="text-gray-100 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round">
+                          <rect xmlns="http://www.w3.org/2000/svg" x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                          <path xmlns="http://www.w3.org/2000/svg" d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                        </svg>
+                        <span class="ml-1 text-gray-100">Experience (4 Years)</span>
+                      </div>
+                    </div>
+                    <div
+                      class="text-center flex flex-row justify-between flex-wrap justify-between items-center text-xs font-bold">
+                      <span class="w-5/12 mt-6 mx-1 p-1 rounded bg-yellow-200 text-yellow-600">Part Time</span>
+                      <span class="w-5/12 mt-6 mx-1 p-1 rounded bg-indigo-200 text-indigo-600">Remote</span>
+                      <span class="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-200 text-blue-600">14 Years Exp</span>
+                      <span class="w-5/12 mt-6 mx-1 p-1 rounded bg-purple-200 text-purple-600">$30/Hr</span>
+                    </div>
+                    <div class="mt-12 flex items-center">
+                      <div class="w-16 h-16 bg-cover rounded-full border-2 border-gray-700" alt=""
+                        style='background-image: url(&quot;https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80&quot;);'>
+                      </div>
+                      <div class="ml-4">
+                        <div class="font-bold text-gray-100">
+                          Daweed
+                        </div>
+                        <!-- <div class="text-xs text-gray-500">Hired 9 Hours ago</div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:mx-2 flex flex-col items-center">
+              <div class="flex-1 flex w-full max-w-sm pt-16 lg:pt-0">
+                <div class="w-full glass p-8 sm:p-12 lg:px-8 xl:px-12 shadow-lg rounded bg-gray-100 relative">
+                  <div class="text-lg font-bold text-gray-100 leading-tight">Junior Developer - Full Stack</div>
+                  <div>
+                    <div class="flex justify-between mt-6 text-xs font-bold">
+                      <div class="flex items-start">
+                        <svg class="text-gray-100 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round">
+                          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                          <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span class="ml-1 text-gray-100">Gurugram(India)</span>
+                      </div>
+
+                      <div class="flex items-start ml-4">
+                        <svg class="text-gray-100 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round">
+                          <rect xmlns="http://www.w3.org/2000/svg" x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                          <path xmlns="http://www.w3.org/2000/svg" d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                        </svg>
+                        <span class="ml-1 text-gray-100">Experience (1 Years)</span>
+                      </div>
+                    </div>
+                    <div
+                      class="text-center flex flex-row justify-between flex-wrap justify-between items-center text-xs font-bold">
+                      <span class="w-5/12 mt-6 mx-1 p-1 rounded bg-yellow-200 text-yellow-600">Part Time</span>
+                      <span class="w-5/12 mt-6 mx-1 p-1 rounded bg-indigo-200 text-indigo-600">Remote</span>
+                      <span class="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-200 text-blue-600">2 Years Exp</span>
+                      <span class="w-5/12 mt-6 mx-1 p-1 rounded bg-purple-200 text-purple-600">$20/Hr</span>
+                    </div>
+                    <div class="mt-12 flex items-center">
+                      <div class="w-16 h-16 bg-cover rounded-full border-2 border-gray-700" alt=""
+                        style='background-image:
+                                                                                              url(&quot;https://images.unsplash.com/photo-1541647376583-8934aaf3448a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80&quot;);'>
+                      </div>
+                      <div class="ml-4">
+                        <div class="font-bold text-gray-100">
+                          Jatin Sharma
+                        </div>
+                        <!-- <div class="text-xs text-gray-500">Hired 2 Days ago</div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="bg-white py-24 sm:py-32 dark:bg-gray-900" id="pricing">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl sm:text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Simple No-Tricks
+              Pricing
+            </h2>
+            <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400"> Choose Premium Package </p>
+          </div>
+          <div
+            class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 ring-opacity-0 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+            <div class="p-8 sm:p-10 lg:flex-auto">
+              <h3 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Premium Membership</h3>
+              <p class="mt-6 text-base leading-7 text-gray-600 dark:text-gray-400">Secure comprehensive peace of mind
+                with
+                our Premium Membership at just $999.</p>
+              <div class="mt-10 flex items-center gap-x-4">
+                <h4 class="flex-none text-sm font-semibold leading-6 text-indigo-600">What's included</h4>
+                <div class="h-px flex-auto bg-gray-100"></div>
+              </div>
+              <ul role="list"
+                class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6 dark:text-gray-400">
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  1 Month Free Review
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  Data Backup
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  Regular Security Checkup
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  And other tests
+                </li>
+              </ul>
+            </div>
+            <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+              <div
+                class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+                <div class="mx-auto max-w-xs px-8">
+                  <p class="text-base font-semibold text-gray-600"> Premium Package</p>
+                  <p class="mt-6 flex items-baseline justify-center gap-x-2">
+                    <span class="text-5xl font-bold tracking-tight text-gray-900">$ 999</span>
+                    <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600">Dollar</span>
+                  </p>
+                  <a href="#"
+                    class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Claim
+                    Offer</a>
+                  <p class="mt-6 text-xs leading-5 text-gray-600">Invoices and receipts available for easy company
+                    reimbursement</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <main class="max-w-6xl mx-auto pt-10 pb-36 px-8">
+
+        <div class="max-w-md mx-auto mb-14 text-center">
+          <h1 class="text-4xl font-semibold mb-6 lg:text-5xl"><span class="text-indigo-600">Flexible</span> Plans</h1>
+          <p class="text-xl text-gray-500 font-medium">Choose a plan that works best for you and your Business.</p>
+        </div>
+
+        <div class="flex flex-col justify-between items-center lg:flex-row lg:items-start">
+
+          <div
+            class="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-1 lg:rounded-r-none">
+            <div class="mb-7 pb-7 flex items-center border-b border-gray-300">
+              <img src="https://res.cloudinary.com/williamsondesign/abstract-1.jpg" alt=""
+                class="rounded-3xl w-20 h-20" />
+              <div class="ml-5">
+                <span class="block text-2xl font-semibold">Basic</span>
+                <span><span class="font-medium text-gray-500 text-xl align-top">$&thinsp;</span><span
+                    class="text-3xl font-bold">499 </span></span><span class="text-gray-500 font-medium">/ -</span>
+              </div>
+            </div>
+            <ul class="mb-7 font-medium text-gray-500">
+              <li class="flex text-lg mb-2">
+                <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+                <span class="ml-3">Get started with <span class="text-black">Website</span></span>
+              </li>
+              <li class="flex text-lg mb-2">
+                <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+                <span class="ml-3">Flexible Customer Support<span class="text-black"></span></span>
+              </li>
+
+              <li class="flex text-lg mb-2">
+                <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+                <span class="ml-3"> <span class="">Scial Media Account</span></span>
+              </li>
+
+              <li class="flex text-lg mb-2">
+                <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+                <span class="ml-3">Google <span class="">Business Account</span></span>
+              </li>
+
+              <li class="flex text-lg">
+                <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+                <span class="ml-3"><span class="text-black">30 GB</span> Storage</span>
+              </li>
+            </ul>
+            <a href="#/"
+              class="flex justify-center items-center bg-indigo-600 rounded-xl py-5 px-4 text-center text-white text-xl">
+              Chat With Expert
+              <img src="https://res.cloudinary.com/williamsondesign/arrow-right.svg" class="ml-2" />
+            </a>
+          </div>
+
+          <div
+            class="w-full flex-1 p-8 order-1 shadow-xl rounded-3xl bg-gray-900 text-gray-400 sm:w-96 lg:w-full lg:order-2 lg:mt-0">
+            <div class="mb-8 pb-8 flex items-center border-b border-gray-600">
+              <img src="https://res.cloudinary.com/williamsondesign/abstract-2.jpg" alt=""
+                class="rounded-3xl w-20 h-20" />
+              <div class="ml-5">
+                <span class="block text-3xl font-semibold text-white">Startup</span>
+                <span><span class="font-medium text-xl align-top">$&thinsp;</span><span
+                    class="text-3xl font-bold text-white">599 </span></span><span class="font-medium">/-</span>
+              </div>
+            </div>
+            <ul class="mb-10 font-medium text-xl">
+              <li class="flex mb-6">
+                <img src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
+                <span class="ml-3">All features in <span class="text-white">Basic</span></span>
+              </li>
+              <li class="flex mb-6">
+                <img src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
+                <span class="ml-3">Flexible <span class="text-white">call scheduling</span></span>
+              </li>
+
+              <li class="flex mb-6">
+                <img src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
+                <span class="ml-3"><span class="text-white">SEO</span> </span>
+              </li>
+
+              <li class="flex">
+                <img src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
+                <span class="ml-3"><span class="text-white">50GB</span> Storage</span>
+              </li>
+
+
+            </ul>
+            <a href="#/"
+              class="flex justify-center items-center bg-indigo-600 rounded-xl py-4 px-4 text-center text-white text-2xl">
+              Chat With Expert
+              <img src="https://res.cloudinary.com/williamsondesign/arrow-right.svg" class="ml-2" />
+            </a>
+          </div>
+
+          <div
+            class="w-full flex-1 mt-8 p-8 order-3 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-3 lg:rounded-l-none">
+            <div class="mb-7 pb-7 flex items-center border-b border-gray-300">
+              <img src="https://res.cloudinary.com/williamsondesign/abstract-3.jpg" alt=""
+                class="rounded-3xl w-20 h-20" />
+              <div class="ml-5">
+                <span class="block text-2xl font-semibold">Enterprise</span>
+                <span><span class="font-medium text-gray-500 text-xl align-top">$&thinsp;</span><span
+                    class="text-3xl font-bold">799</span></span><span class="text-gray-500 font-medium"> /-</span>
+              </div>
+            </div>
+            <ul class="mb-7 font-medium text-gray-500">
+              <li class="flex text-lg mb-2">
+                <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+                <span class="ml-3">All features in <span class="text-black">Startup</span></span>
+              </li>
+              <li class="flex text-lg mb-2">
+                <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+                <span class="ml-3">Growth <span class="text-black">oriented</span></span>
+              </li>
+
+              <li class="flex text-lg mb-2">
+                <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+                <span class="ml-3">Regular Security Checkup<span class="text-black"></span> </span>
+              </li>
+
+              <li class="flex text-lg mb-2">
+                <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+                <span class="ml-3">Regular Updates<span class="text-black"></span> </span>
+              </li>
+
+
+
+              <li class="flex text-lg">
+                <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+                <span class="ml-3"><span class="text-black">Storage On Demand</span> </span>
+              </li>
+            </ul>
+            <a href="#/"
+              class="flex justify-center items-center bg-indigo-600 rounded-xl py-5 px-4 text-center text-white text-xl">
+              Chat With Expert
+              <img src="https://res.cloudinary.com/williamsondesign/arrow-right.svg" class="ml-2" />
+            </a>
+          </div>
+
+        </div>
+
+      </main>
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="px-5 sm:px-10 md:px-20 lg:px-10 xl:px-20 py-8 bg-indigo-100" id="blog-posts">
+        <div class="max-w-screen-xl mx-auto">
+          <div class="xl:flex">
+            <div>
+              <h3 class="leading-none font-black text-3xl">Our Clients</h3>
+              <div class="flex flex-col items-center lg:flex-row lg:items-stretch lg:justify-around">
+                <a href="" class="flex w-full max-w-sm mt-6 lg:mt-8 xl:mr-8">
+                  <div
+                    class="transition-all duration-300 cursor-pointer w-full shadow-lg hover:shadow-xl rounded-lg bg-gray-100 relative">
+                    <div class="w-full h-48 bg-cover rounded-t-lg" style='background-image:
+                      url(&quot;https://vanshlogistics.in/Vansh%20Logistics.png&quot;);'></div>
+                    <div class="p-6">
+                      <div class="text-lg font-bold">Vansh Logistics</div>
+                      <div class="mt-2 text-gray-900 text-sm">
+                        Specialize in Transport & Logistics. We have 3 years + rich experience in Japanese auto mobile.
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="https://timerse.com" class="flex w-full max-w-sm mt-6 lg:mt-8 xl:mr-8">
+                  <div
+                    class="transition-all  duration-300 cursor-pointer w-full shadow-lg hover:shadow-xl rounded-lg bg-gray-100 relative">
+                    <div class="w-72 h-44 bg-contain  rounded-t-lg bg-center" style='background-image:
+                      url(&quot;https://amrconstruction.in/amrlogo.png&quot;);'></div>
+                    <div class="p-6">
+                      <div class="text-lg font-bold"> Amr Construction</div>
+                      <div class="mt-2 text-gray-900 text-sm">
+                        AMR CONSTRUCTIONS is a company that provides professional construction services.
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="mt-12 xl:mt-0 xl:ml-8">
+              <h3 class="leading-none font-black text-3xl">More Clients</h3>
+              <div class="flex flex-col items-center lg:flex-row lg:items-stretch lg:justify-around xl:flex-col">
+                <a href="" class="flex w-full max-w-sm mt-6 lg:mt-8">
+                  <div class="transition-all duration-300 cursor-pointer w-full shadow-lg hover:shadow-xl rounded-lg
+                    bg-gray-100 relative xl:flex xl:flex-row-reverse xl:items-center xl:px-6 xl:py-8">
+                    <div class="w-full h-48 bg-contain bg-no-repeat  rounded-t-lg xl:w-52 xl:h-20 xl:rounded-lg xl:ml-0"
+                      style='background-image:
+                      url(&quot;https://premiumdrycleaner.com/logoF.png&quot;);'></div>
+                    <div class="p-6 xl:p-0">
+                      <div class="text-lg font-bold">Premium Dry Cleaners</div>
+                      <div class="mt-2 text-gray-900 text-sm ">
+                        Premium Dry Cleaners is a reputable dry cleaning service located in Gurugram Established in
+                        2010.
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+                <a href=" " class="flex w-full max-w-sm mt-6 lg:mt-8">
+                  <div class="transition-all duration-300 cursor-pointer w-full shadow-lg hover:shadow-xl rounded-lg
+                    bg-gray-100 relative xl:flex xl:flex-row-reverse xl:items-center xl:px-6 xl:py-8">
+                    <div class="w-full h-48 bg-contain bg-no-repeat rounded-t-lg xl:w-32 xl:h-20 xl:rounded-lg xl:ml-2"
+                      style='background-image:
+                      url(&quot;https://docprim.com/Docprim.png&quot;);'></div>
+                    <div class="p-6 xl:p-0">
+                      <div class="text-lg font-bold"> Docprim</div>
+                      <div class="mt-2 text-gray-900 text-sm ">
+                        Streamline your appointments effortlessly with our user-friendly slot booking website
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+<!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+<div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+      <div class="max-w-xl lg:max-w-lg">
+        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Subscribe to our newsletter.</h2>
+        <p class="mt-4 text-lg leading-8 text-gray-300"> By Subscribe our newsletter services you will recieve latest Technology updates every week and upcoming offers.</p>
+        <div class="mt-6 flex max-w-md gap-x-4">
+          <label for="email-address" class="sr-only">Email address</label>
+          <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Enter your email">
+          <button type="submit" class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button>
+        </div>
+      </div>
+      <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+        <div class="flex flex-col items-start">
+          <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+            </svg>
+          </div>
+          <dt class="mt-4 font-semibold text-white">Weekly articles</dt>
+          <dd class="mt-2 leading-7 text-gray-400">We will share latest Technology updates with you every week.</dd>
+        </div>
+        <div class="flex flex-col items-start">
+          <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15m.002 0h-.002" />
+            </svg>
+          </div>
+          <dt class="mt-4 font-semibold text-white">Promotional</dt>
+          <dd class="mt-2 leading-7 text-gray-400">We will share upcoming offer's and latest offer's details with you.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+  <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+    <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <footer class="px-5 sm:px-10 md:px-20 py-8">
+      <div class="flex flex-col items-center lg:flex-row-reverse justify-between">
+        <div class="">
+          <a class="mx-4 text-sm font-bold text-indigo-600 hover:text-indigo-800" href="#">Home</a>
+          <a class="mx-4 text-sm font-bold text-indigo-600 hover:text-indigo-800" href="#">Services</a>
+          <a class="mx-4 text-sm font-bold text-indigo-600 hover:text-indigo-800" href="#">About Us</a>
+          <a class="mx-4 text-sm font-bold text-indigo-600 hover:text-indigo-800" href="#">Careers</a>
+          <!-- <a href="#">About Us</a> -->
+          <!-- <a href="#">Careers</a> -->
+        </div>
+        <div class="mt-4">
+          <!-- <img src="https://storage.googleapis.com/devitary-image-host.appspot.com/15846435184459982716-LogoMakr_7POjrN.png" class="w-32"> -->
+        </div>
+        <div class="mt-4 text-xs font-bold text-gray-500">
+          &copy; 2023 MBG
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
